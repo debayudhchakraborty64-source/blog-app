@@ -54,10 +54,6 @@ export default function Home() {
     <>
       <section className="hero">
         <h1>Stories worth sharing.</h1>
-        <p>
-          Write, read and discuss — a tiny blog built with React, Node,
-          Express &amp; MongoDB.
-        </p>
         <form onSubmit={submitSearch} className="search">
           <input
             value={search}
