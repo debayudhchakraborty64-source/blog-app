@@ -2,7 +2,9 @@ import axios from "axios";
 
 // Central axios instance — baseURL "/api" hits the Vite dev proxy,
 // which forwards every call to the Express backend on port 5000.
-const api = axios.create({ baseURL: "/api" });
+// In production the API lives on its own URL, so set VITE_API_URL
+// (e.g. https://your-backend.onrender.com/api) in the host's env vars.
+const api = axios.create({ baseURL: import.meta.env.VITE_API_URL || "/api" });
 
 // Attach the saved JWT (if any) to every request
 api.interceptors.request.use((config) => {
