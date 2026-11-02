@@ -1,0 +1,46 @@
+# ============================================
+#  Secrets & keys — NEVER commit these files
+# ============================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.jks
+secrets.json
+*.env.local
+
+# ================= Dependencies =================
+node_modules/
+node_modules/.cache/
+.pnp
+.pnp.js
+
+# ================= Builds =================
+dist/
+build/
+.vite/
+out/
+coverage/
+*.tsbuildinfo
+
+# ================= Logs =================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ================= Editor / OS =================
+.vscode/*
+!.vscode/settings.json
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.eslintcache

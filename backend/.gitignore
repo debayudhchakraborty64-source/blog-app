@@ -1,0 +1,16 @@
+# Secrets & keys — never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+
+# Dependencies & builds
+node_modules/
+dist/
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
